@@ -30,10 +30,12 @@ let package = Package(
             ],
             publicHeadersPath: "./",
             cSettings: [
-              .headerSearchPath("./**"),
+                .headerSearchPath("./"),
+                .headerSearchPath("./Protocols"),
+                .headerSearchPath("./Resource Loading"),
             ],
             linkerSettings: [
-              .linkedFramework("UIKit", .when(platforms: .some([.iOS, .tvOS])))
+                .linkedFramework("UIKit", .when(platforms: .some([.iOS, .tvOS])))
             ]
         )
     ]
