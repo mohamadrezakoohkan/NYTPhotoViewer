@@ -50,3 +50,9 @@ bin/
 
 # Carthage
 Carthage/Build
+Carthage/Checkouts
+
+## SPM
+.swiftpm/
+.build/
+Package.resolved
