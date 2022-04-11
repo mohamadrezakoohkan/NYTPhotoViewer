@@ -1,5 +1,5 @@
+git "file:///Users/adam/Projects/iOS/PINRemoteImage" "f0c290b262abf7e89f897075f5ff42287ae6a17e"
 git "https://chromium.googlesource.com/webm/libwebp" "v1.1.0"
 github "erikdoe/ocmock" "v3.7.1"
-github "pinterest/PINCache" "3.0.1"
-github "pinterest/PINOperation" "1.2"
-github "pinterest/PINRemoteImage" "3.0.1"
+github "pinterest/PINCache" "3.0.3"
+github "pinterest/PINOperation" "1.2.1"

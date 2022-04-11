@@ -1,1 +1,2 @@
-github "pinterest/PINRemoteImage" ~> 3.0.1
+#github "pinterest/PINRemoteImage" ~> 3.0.3
+git "file:///Users/adam/Projects/iOS/PINRemoteImage" "feature/m1-support"
