@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -89,6 +89,8 @@
 		55E3B968261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E3B962261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.m */; };
 		55E3B969261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E3B966261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55E3B96A261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E3B966261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		665FC80D2805B9D100031F2A /* PINRemoteImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FC80C2805B9D100031F2A /* PINRemoteImage.xcframework */; };
+		665FC80E2805B9D100031F2A /* PINRemoteImage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 665FC80C2805B9D100031F2A /* PINRemoteImage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9371A73C1E438B9C00A8F2EF /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371A73B1E438B9C00A8F2EF /* PhotoItem.swift */; };
 		9371A7441E438BCE00A8F2EF /* PhotoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371A7431E438BCE00A8F2EF /* PhotoBox.swift */; };
 		9371A7461E43D61E00A8F2EF /* PhotoViewerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371A7451E43D61E00A8F2EF /* PhotoViewerCoordinator.swift */; };
@@ -96,11 +98,6 @@
 		93F45B191E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 93F45B161E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93F45B1A1E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F45B171E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.m */; };
 		93F45B1B1E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F45B171E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.m */; };
-		CD3F77C72409223C005F08E8 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F77BD2409223C005F08E8 /* PINRemoteImage.framework */; };
-		CD3F77CA2409224E005F08E8 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F77BD2409223C005F08E8 /* PINRemoteImage.framework */; };
-		CD3F77CB2409224E005F08E8 /* PINRemoteImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F77BD2409223C005F08E8 /* PINRemoteImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CD3F77CC2409225F005F08E8 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F77BD2409223C005F08E8 /* PINRemoteImage.framework */; };
-		CD3F77CD2409225F005F08E8 /* PINRemoteImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD3F77BD2409223C005F08E8 /* PINRemoteImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDA5DA08240EB5B400A796D3 /* NYTInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D6134208683990092ED17 /* NYTInterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -219,7 +216,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CD3F77CB2409224E005F08E8 /* PINRemoteImage.framework in Embed Frameworks */,
 				111084991C876DDE00699670 /* NYTPhotoViewer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -231,8 +227,18 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CD3F77CD2409225F005F08E8 /* PINRemoteImage.framework in Embed Frameworks */,
 				11FBDAF81C877CEF00018169 /* NYTPhotoViewer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		665FC80F2805B9D100031F2A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				665FC80E2805B9D100031F2A /* PINRemoteImage.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,12 +310,12 @@
 		55E3B962261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+NYTPhotoViewer.m"; sourceTree = "<group>"; };
 		55E3B966261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+NYTPhotoViewer.h"; sourceTree = "<group>"; };
 		55EED70925FFF2A4006929D8 /* NYTPhotoCaptionViewLayoutWidthHinting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTPhotoCaptionViewLayoutWidthHinting.h; sourceTree = "<group>"; };
+		665FC80C2805B9D100031F2A /* PINRemoteImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PINRemoteImage.xcframework; path = Carthage/Build/PINRemoteImage.xcframework; sourceTree = "<group>"; };
 		9371A73B1E438B9C00A8F2EF /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
 		9371A7431E438BCE00A8F2EF /* PhotoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBox.swift; sourceTree = "<group>"; };
 		9371A7451E43D61E00A8F2EF /* PhotoViewerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewerCoordinator.swift; sourceTree = "<group>"; };
 		93F45B161E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTPhotoViewerSinglePhotoDataSource.h; sourceTree = "<group>"; };
 		93F45B171E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTPhotoViewerSinglePhotoDataSource.m; sourceTree = "<group>"; };
-		CD3F77BD2409223C005F08E8 /* PINRemoteImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINRemoteImage.framework; path = Carthage/Build/iOS/PINRemoteImage.framework; sourceTree = "<group>"; };
 		CD3F77CE2409229B005F08E8 /* PINRemoteImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PINRemoteImage.xcodeproj; path = Carthage/Checkouts/PINRemoteImage/PINRemoteImage.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -318,7 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3F77C72409223C005F08E8 /* PINRemoteImage.framework in Frameworks */,
+				665FC80D2805B9D100031F2A /* PINRemoteImage.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +341,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3F77CA2409224E005F08E8 /* PINRemoteImage.framework in Frameworks */,
 				111084971C876DD300699670 /* NYTPhotoViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +356,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3F77CC2409225F005F08E8 /* PINRemoteImage.framework in Frameworks */,
 				11FBDAF71C877CEF00018169 /* NYTPhotoViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,8 +487,8 @@
 		11BA4B0B1C8913330007EC46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				665FC80C2805B9D100031F2A /* PINRemoteImage.xcframework */,
 				CD3F77CE2409229B005F08E8 /* PINRemoteImage.xcodeproj */,
-				CD3F77BD2409223C005F08E8 /* PINRemoteImage.framework */,
 				11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */,
 			);
 			name = Frameworks;
@@ -577,6 +581,7 @@
 				111084021C875B5000699670 /* Frameworks */,
 				111084031C875B5000699670 /* Headers */,
 				111084041C875B5000699670 /* Resources */,
+				665FC80F2805B9D100031F2A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1075,7 +1080,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1103,7 +1109,11 @@
 				INFOPLIST_FILE = NYTPhotoViewer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.NYTPhotoViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1126,7 +1136,11 @@
 				INFOPLIST_FILE = NYTPhotoViewer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.NYTPhotoViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1137,7 +1151,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = NYTPhotoViewerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.NYTPhotoViewerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1147,7 +1165,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = NYTPhotoViewerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.NYTPhotoViewerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1162,7 +1184,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Example/NYTPhotoViewer-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1177,7 +1202,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Example/NYTPhotoViewer-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1194,7 +1222,11 @@
 				INFOPLIST_FILE = NYTPhotoViewer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.NYTPhotoViewerCore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1212,7 +1244,11 @@
 				INFOPLIST_FILE = NYTPhotoViewer/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.NYTPhotoViewerCore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1229,7 +1265,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Example-Swift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NYTimes.Example-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1247,7 +1286,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Example-Swift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NYTimes.Example-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
