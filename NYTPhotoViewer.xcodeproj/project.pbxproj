@@ -46,7 +46,6 @@
 		111084941C876D1900699670 /* NYTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111084931C876D1900699670 /* NYTViewController.m */; };
 		111084971C876DD300699670 /* NYTPhotoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111084061C875B5000699670 /* NYTPhotoViewer.framework */; };
 		111084991C876DDE00699670 /* NYTPhotoViewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 111084061C875B5000699670 /* NYTPhotoViewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11BA4B0A1C8913220007EC46 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BA4B071C8912F20007EC46 /* OCMock.framework */; };
 		11FBDA8C1C87753200018169 /* NYTPhotoCaptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 111084641C87684D00699670 /* NYTPhotoCaptionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11FBDA8D1C87753200018169 /* NYTPhotoCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111084341C87682300699670 /* NYTPhotoCaptionView.m */; };
 		11FBDA8E1C87753200018169 /* NYTPhotoDismissalInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 111084351C87682300699670 /* NYTPhotoDismissalInteractionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -91,6 +90,9 @@
 		55E3B96A261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E3B966261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		665FC80D2805B9D100031F2A /* PINRemoteImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FC80C2805B9D100031F2A /* PINRemoteImage.xcframework */; };
 		665FC80E2805B9D100031F2A /* PINRemoteImage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 665FC80C2805B9D100031F2A /* PINRemoteImage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		665FC86F2810624B00031F2A /* OCMock.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FC8642810624B00031F2A /* OCMock.xcframework */; };
+		665FC874281090B300031F2A /* PINCache.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FC87028108F7000031F2A /* PINCache.xcframework */; };
+		665FC875281090B300031F2A /* PINOperation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665FC87228108F8B00031F2A /* PINOperation.xcframework */; };
 		9371A73C1E438B9C00A8F2EF /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371A73B1E438B9C00A8F2EF /* PhotoItem.swift */; };
 		9371A7441E438BCE00A8F2EF /* PhotoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371A7431E438BCE00A8F2EF /* PhotoBox.swift */; };
 		9371A7461E43D61E00A8F2EF /* PhotoViewerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371A7451E43D61E00A8F2EF /* PhotoViewerCoordinator.swift */; };
@@ -311,6 +313,9 @@
 		55E3B966261B7E3C000F32B6 /* NSBundle+NYTPhotoViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+NYTPhotoViewer.h"; sourceTree = "<group>"; };
 		55EED70925FFF2A4006929D8 /* NYTPhotoCaptionViewLayoutWidthHinting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTPhotoCaptionViewLayoutWidthHinting.h; sourceTree = "<group>"; };
 		665FC80C2805B9D100031F2A /* PINRemoteImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PINRemoteImage.xcframework; path = Carthage/Build/PINRemoteImage.xcframework; sourceTree = "<group>"; };
+		665FC8642810624B00031F2A /* OCMock.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMock.xcframework; path = Carthage/Build/OCMock.xcframework; sourceTree = "<group>"; };
+		665FC87028108F7000031F2A /* PINCache.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PINCache.xcframework; path = Carthage/Build/PINCache.xcframework; sourceTree = "<group>"; };
+		665FC87228108F8B00031F2A /* PINOperation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PINOperation.xcframework; path = Carthage/Build/PINOperation.xcframework; sourceTree = "<group>"; };
 		9371A73B1E438B9C00A8F2EF /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
 		9371A7431E438BCE00A8F2EF /* PhotoBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBox.swift; sourceTree = "<group>"; };
 		9371A7451E43D61E00A8F2EF /* PhotoViewerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewerCoordinator.swift; sourceTree = "<group>"; };
@@ -332,7 +337,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11BA4B0A1C8913220007EC46 /* OCMock.framework in Frameworks */,
+				665FC874281090B300031F2A /* PINCache.xcframework in Frameworks */,
+				665FC875281090B300031F2A /* PINOperation.xcframework in Frameworks */,
+				665FC86F2810624B00031F2A /* OCMock.xcframework in Frameworks */,
 				111084111C875B5000699670 /* NYTPhotoViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +494,9 @@
 		11BA4B0B1C8913330007EC46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				665FC87228108F8B00031F2A /* PINOperation.xcframework */,
+				665FC87028108F7000031F2A /* PINCache.xcframework */,
+				665FC8642810624B00031F2A /* OCMock.xcframework */,
 				665FC80C2805B9D100031F2A /* PINRemoteImage.xcframework */,
 				CD3F77CE2409229B005F08E8 /* PINRemoteImage.xcodeproj */,
 				11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */,
