@@ -1,4 +1,4 @@
 github "erikdoe/ocmock" "v3.7.1"
-github "dowjones-mobile/PINRemoteImage" "58db942025ed1edc1fe64c170bafec049034a150"
+github "dowjones-mobile/PINRemoteImage" "3.0.3-dj"
 github "pinterest/PINCache" "3.0.3"
 github "pinterest/PINOperation" "1.2.1"
