@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-#import "NYTPhotoViewerContainer.h"
+#import "NYTPhotoContainer.h"
 
 @class NYTScalingImageView;
 
@@ -24,7 +24,7 @@ extern NSString * const NYTPhotoViewControllerPhotoImageUpdatedNotification;
 /**
  *  The view controller controlling the display of a single photo object.
  */
-@interface NYTPhotoViewController : UIViewController <NYTPhotoViewerContainer>
+@interface NYTPhotoViewController : UIViewController <NYTPhotoContainer>
 
 /**
  *  The internal scaling image view used to display the photo.
@@ -50,13 +50,12 @@ extern NSString * const NYTPhotoViewControllerPhotoImageUpdatedNotification;
  *  The designated initializer that takes the photo and activity view.
  *
  *  @param photo              The photo object that this view controller manages.
- *  @param itemIndex          The index of this view controller in the photo viewer collection.
  *  @param loadingView        The view to display while the photo's image loads. This view will be hidden when the image loads.
  *  @param notificationCenter The notification center on which to observe the `NYTPhotoViewControllerPhotoImageUpdatedNotification`.
  *
  *  @return A fully initialized object.
  */
-- (instancetype)initWithPhoto:(nullable id <NYTPhoto>)photo itemIndex:(NSUInteger)itemIndex loadingView:(nullable UIView *)loadingView notificationCenter:(nullable NSNotificationCenter *)notificationCenter NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithPhoto:(nullable id <NYTPhoto>)photo loadingView:(nullable UIView *)loadingView notificationCenter:(nullable NSNotificationCenter *)notificationCenter NS_DESIGNATED_INITIALIZER;
 
 @end
 

@@ -10,18 +10,11 @@
 #import "NYTPhoto.h"
 #import "NYTScalingImageView.h"
 
-#ifdef ANIMATED_GIF_SUPPORT
-#import <PINRemoteImage/PINRemoteImage.h>
-#import <PINRemoteImage/PINAnimatedImageView.h>
-#endif
-
 NSString * const NYTPhotoViewControllerPhotoImageUpdatedNotification = @"NYTPhotoViewControllerPhotoImageUpdatedNotification";
 
 @interface NYTPhotoViewController () <UIScrollViewDelegate>
 
-@property (nonatomic, nullable) id <NYTPhoto> photo;
-@property (nonatomic, nullable) UIView *interstitialView;
-@property (nonatomic) NSUInteger photoViewItemIndex;
+@property (nonatomic) id <NYTPhoto> photo;
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 
@@ -46,14 +39,14 @@ NSString * const NYTPhotoViewControllerPhotoImageUpdatedNotification = @"NYTPhot
 #pragma mark - UIViewController
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    return [self initWithPhoto:nil itemIndex:0 loadingView:nil notificationCenter:nil];
+    return [self initWithPhoto:nil loadingView:nil notificationCenter:nil];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
 
     if (self) {
-        [self commonInitWithPhoto:nil itemIndex:0 loadingView:nil notificationCenter:nil];
+        [self commonInitWithPhoto:nil loadingView:nil notificationCenter:nil];
     }
 
     return self;
@@ -89,20 +82,18 @@ NSString * const NYTPhotoViewControllerPhotoImageUpdatedNotification = @"NYTPhot
 
 #pragma mark - NYTPhotoViewController
 
-- (instancetype)initWithPhoto:(id <NYTPhoto>)photo itemIndex:(NSUInteger)itemIndex loadingView:(UIView *)loadingView notificationCenter:(NSNotificationCenter *)notificationCenter {
+- (instancetype)initWithPhoto:(id <NYTPhoto>)photo loadingView:(UIView *)loadingView notificationCenter:(NSNotificationCenter *)notificationCenter {
     self = [super initWithNibName:nil bundle:nil];
     
     if (self) {
-        [self commonInitWithPhoto:photo itemIndex:itemIndex loadingView:loadingView notificationCenter:notificationCenter];
+        [self commonInitWithPhoto:photo loadingView:loadingView notificationCenter:notificationCenter];
     }
     
     return self;
 }
 
-- (void)commonInitWithPhoto:(id <NYTPhoto>)photo itemIndex:(NSUInteger)itemIndex loadingView:(UIView *)loadingView notificationCenter:(NSNotificationCenter *)notificationCenter {
+- (void)commonInitWithPhoto:(id <NYTPhoto>)photo loadingView:(UIView *)loadingView notificationCenter:(NSNotificationCenter *)notificationCenter {
     _photo = photo;
-    _interstitialView = nil;
-    _photoViewItemIndex = itemIndex;
     
     if (photo.imageData) {
         _scalingImageView = [[NYTScalingImageView alloc] initWithImageData:photo.imageData frame:CGRectZero];

@@ -10,20 +10,13 @@
 
 #import "tgmath.h"
 
-#ifdef ANIMATED_GIF_SUPPORT
-#import <PINRemoteImage/PINRemoteImage.h>
-#import <PINRemoteImage/PINAnimatedImageView.h>
-#endif
-
 @interface NYTScalingImageView ()
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 
-#ifdef ANIMATED_GIF_SUPPORT
-@property (nonatomic) PINAnimatedImageView *imageView;
-#else
+
 @property (nonatomic) UIImageView *imageView;
-#endif
+
 @end
 
 @implementation NYTScalingImageView
@@ -88,11 +81,7 @@
 - (void)setupInternalImageViewWithImage:(UIImage *)image imageData:(NSData *)imageData {
     UIImage *imageToUse = image ?: [UIImage imageWithData:imageData];
 
-#ifdef ANIMATED_GIF_SUPPORT
-    self.imageView = [[PINAnimatedImageView alloc] initWithAnimatedImage:[[PINCachedAnimatedImage alloc] initWithAnimatedImageData:imageData]];
-#else
     self.imageView = [[UIImageView alloc] initWithImage:imageToUse];
-#endif
     [self updateImage:imageToUse imageData:imageData];
     
     [self addSubview:self.imageView];
@@ -121,11 +110,6 @@
     self.imageView.transform = CGAffineTransformIdentity;
     self.imageView.image = imageToUse;
     
-#ifdef ANIMATED_GIF_SUPPORT
-    // It's necessarry to first assign the UIImage so calulations for layout go right (see above)
-    self.imageView.animatedImage = [[PINCachedAnimatedImage alloc] initWithAnimatedImageData:imageData];
-#endif
-    
     self.imageView.frame = CGRectMake(0, 0, imageToUse.size.width, imageToUse.size.height);
     
     self.contentSize = imageToUse.size;
@@ -143,11 +127,7 @@
 }
 
 - (void)updateZoomScale {
-#ifdef ANIMATED_GIF_SUPPORT
-    if (self.imageView.animatedImage || self.imageView.image) {
-#else
     if (self.imageView.image) {
-#endif
         CGRect scrollViewFrame = self.bounds;
         
         CGFloat scaleWidth = scrollViewFrame.size.width / self.imageView.image.size.width;
