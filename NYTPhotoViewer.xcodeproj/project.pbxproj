@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1110840A1C875B5000699670 /* NYTPhotoViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 111084091C875B5000699670 /* NYTPhotoViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		111084111C875B5000699670 /* NYTPhotoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111084061C875B5000699670 /* NYTPhotoViewer.framework */; };
 		1110844D1C87682300699670 /* NYTPhotoCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111084341C87682300699670 /* NYTPhotoCaptionView.m */; };
 		1110844E1C87682300699670 /* NYTPhotoDismissalInteractionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 111084351C87682300699670 /* NYTPhotoDismissalInteractionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1110844F1C87682300699670 /* NYTPhotoDismissalInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111084361C87682300699670 /* NYTPhotoDismissalInteractionController.m */; };
@@ -33,13 +32,6 @@
 		111084621C87682300699670 /* NSBundle+NYTPhotoViewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1110844B1C87682300699670 /* NSBundle+NYTPhotoViewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		111084631C87682300699670 /* NSBundle+NYTPhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110844C1C87682300699670 /* NSBundle+NYTPhotoViewer.m */; };
 		111084651C87684D00699670 /* NYTPhotoCaptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 111084641C87684D00699670 /* NYTPhotoCaptionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		111084971C876DD300699670 /* NYTPhotoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111084061C875B5000699670 /* NYTPhotoViewer.framework */; };
-		111084991C876DDE00699670 /* NYTPhotoViewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 111084061C875B5000699670 /* NYTPhotoViewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11BA4AF11C8912980007EC46 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BA4AEB1C8911A00007EC46 /* FLAnimatedImage.framework */; };
-		11BA4AF21C8912980007EC46 /* FLAnimatedImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11BA4AEB1C8911A00007EC46 /* FLAnimatedImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11BA4B0A1C8913220007EC46 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BA4B071C8912F20007EC46 /* OCMock.framework */; };
-		11BA4B0C1C8913590007EC46 /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BA4AEB1C8911A00007EC46 /* FLAnimatedImage.framework */; };
-		11BA4B0D1C8913590007EC46 /* FLAnimatedImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11BA4AEB1C8911A00007EC46 /* FLAnimatedImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11FBDA7A1C87714600018169 /* NYTPhotoViewer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 11FBDA791C87714600018169 /* NYTPhotoViewer.bundle */; };
 		11FBDA8C1C87753200018169 /* NYTPhotoCaptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 111084641C87684D00699670 /* NYTPhotoCaptionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11FBDA8D1C87753200018169 /* NYTPhotoCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 111084341C87682300699670 /* NYTPhotoCaptionView.m */; };
@@ -67,140 +59,16 @@
 		11FBDAA31C87753200018169 /* NSBundle+NYTPhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110844C1C87682300699670 /* NSBundle+NYTPhotoViewer.m */; };
 		11FBDAA41C87754A00018169 /* NYTPhotoViewer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 11FBDA791C87714600018169 /* NYTPhotoViewer.bundle */; };
 		11FBDAA61C87768B00018169 /* NYTPhotoViewerCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FBDAA51C87768700018169 /* NYTPhotoViewerCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11FBDAF71C877CEF00018169 /* NYTPhotoViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111084061C875B5000699670 /* NYTPhotoViewer.framework */; };
-		11FBDAF81C877CEF00018169 /* NYTPhotoViewer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 111084061C875B5000699670 /* NYTPhotoViewer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93F45B181E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 93F45B161E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93F45B191E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 93F45B161E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93F45B1A1E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F45B171E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.m */; };
 		93F45B1B1E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F45B171E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		111084121C875B5000699670 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 111083FD1C875B4F00699670 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 111084051C875B5000699670;
-			remoteInfo = NYTPhotoViewer;
-		};
-		1110849A1C876DDE00699670 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 111083FD1C875B4F00699670 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 111084051C875B5000699670;
-			remoteInfo = NYTPhotoViewer;
-		};
-		11BA4AEA1C8911A00007EC46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11BA4AE61C8911A00007EC46 /* FLAnimatedImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 92C9BC0C1B199DC500D79B06;
-			remoteInfo = FLAnimatedImage;
-		};
-		11BA4AEE1C8912600007EC46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11BA4AE61C8911A00007EC46 /* FLAnimatedImage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 92C9BC0B1B199DC500D79B06;
-			remoteInfo = FLAnimatedImage;
-		};
-		11BA4AF31C8912980007EC46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11BA4AE61C8911A00007EC46 /* FLAnimatedImage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 92C9BC0B1B199DC500D79B06;
-			remoteInfo = FLAnimatedImage;
-		};
-		11BA4AFE1C8912F20007EC46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 030EF0A814632FD000B04273;
-			remoteInfo = OCMock;
-		};
-		11BA4B001C8912F20007EC46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 03565A3118F0566E003AE91E;
-			remoteInfo = OCMockTests;
-		};
-		11BA4B021C8912F20007EC46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 030EF0DC14632FF700B04273;
-			remoteInfo = OCMockLib;
-		};
-		11BA4B041C8912F20007EC46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D31108AD1828DB8700737925;
-			remoteInfo = OCMockLibTests;
-		};
-		11BA4B061C8912F20007EC46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F0B950F11B0080BE00942C38;
-			remoteInfo = "OCMock iOS";
-		};
-		11BA4B081C8912F20007EC46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 817EB1621BD765130047E85A;
-			remoteInfo = "OCMock tvOS";
-		};
-		11BA4B0E1C8913590007EC46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 11BA4AE61C8911A00007EC46 /* FLAnimatedImage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 92C9BC0B1B199DC500D79B06;
-			remoteInfo = FLAnimatedImage;
-		};
-		11FBDAF91C877CEF00018169 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 111083FD1C875B4F00699670 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 111084051C875B5000699670;
-			remoteInfo = NYTPhotoViewer;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1110849C1C876DDE00699670 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				111084991C876DDE00699670 /* NYTPhotoViewer.framework in Embed Frameworks */,
-				11BA4AF21C8912980007EC46 /* FLAnimatedImage.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11FBDAF51C877CCE00018169 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				11FBDAF81C877CEF00018169 /* NYTPhotoViewer.framework in Embed Frameworks */,
-				11BA4B0D1C8913590007EC46 /* FLAnimatedImage.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		111084061C875B5000699670 /* NYTPhotoViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYTPhotoViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		111084091C875B5000699670 /* NYTPhotoViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYTPhotoViewer.h; sourceTree = "<group>"; };
 		1110840B1C875B5000699670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		111084101C875B5000699670 /* NYTPhotoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTPhotoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		111084341C87682300699670 /* NYTPhotoCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTPhotoCaptionView.m; sourceTree = "<group>"; };
 		111084351C87682300699670 /* NYTPhotoDismissalInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTPhotoDismissalInteractionController.h; sourceTree = "<group>"; };
 		111084361C87682300699670 /* NYTPhotoDismissalInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTPhotoDismissalInteractionController.m; sourceTree = "<group>"; };
@@ -225,13 +93,9 @@
 		1110844B1C87682300699670 /* NSBundle+NYTPhotoViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+NYTPhotoViewer.h"; sourceTree = "<group>"; };
 		1110844C1C87682300699670 /* NSBundle+NYTPhotoViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+NYTPhotoViewer.m"; sourceTree = "<group>"; };
 		111084641C87684D00699670 /* NYTPhotoCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTPhotoCaptionView.h; sourceTree = "<group>"; };
-		1110846A1C876A2B00699670 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		11BA4AE61C8911A00007EC46 /* FLAnimatedImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FLAnimatedImage.xcodeproj; path = Carthage/Checkouts/FLAnimatedImage/FLAnimatedImage.xcodeproj; sourceTree = "<group>"; };
-		11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = Carthage/Checkouts/ocmock/Source/OCMock.xcodeproj; sourceTree = "<group>"; };
 		11FBDA791C87714600018169 /* NYTPhotoViewer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NYTPhotoViewer.bundle; path = ../NYTPhotoViewer.bundle; sourceTree = "<group>"; };
 		11FBDA831C8774AC00018169 /* NYTPhotoViewerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NYTPhotoViewerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FBDAA51C87768700018169 /* NYTPhotoViewerCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYTPhotoViewerCore.h; sourceTree = "<group>"; };
-		11FBDADC1C877BD600018169 /* Example-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F45B161E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTPhotoViewerSinglePhotoDataSource.h; sourceTree = "<group>"; };
 		93F45B171E3BB5610093DB93 /* NYTPhotoViewerSinglePhotoDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTPhotoViewerSinglePhotoDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,37 +108,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1110840D1C875B5000699670 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11BA4B0A1C8913220007EC46 /* OCMock.framework in Frameworks */,
-				111084111C875B5000699670 /* NYTPhotoViewer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		111084671C876A2B00699670 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				111084971C876DD300699670 /* NYTPhotoViewer.framework in Frameworks */,
-				11BA4AF11C8912980007EC46 /* FLAnimatedImage.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		11FBDA7F1C8774AC00018169 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11FBDAD91C877BD600018169 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11FBDAF71C877CEF00018169 /* NYTPhotoViewer.framework in Frameworks */,
-				11BA4B0C1C8913590007EC46 /* FLAnimatedImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +123,6 @@
 			children = (
 				111084081C875B5000699670 /* NYTPhotoViewer */,
 				111084071C875B5000699670 /* Products */,
-				11BA4B0B1C8913330007EC46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -294,10 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				111084061C875B5000699670 /* NYTPhotoViewer.framework */,
-				111084101C875B5000699670 /* NYTPhotoViewerTests.xctest */,
-				1110846A1C876A2B00699670 /* Example.app */,
 				11FBDA831C8774AC00018169 /* NYTPhotoViewerCore.framework */,
-				11FBDADC1C877BD600018169 /* Example-Swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -353,36 +186,6 @@
 				1110844C1C87682300699670 /* NSBundle+NYTPhotoViewer.m */,
 			);
 			path = "Resource Loading";
-			sourceTree = "<group>";
-		};
-		11BA4AE71C8911A00007EC46 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				11BA4AEB1C8911A00007EC46 /* FLAnimatedImage.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		11BA4AF61C8912F20007EC46 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				11BA4AFF1C8912F20007EC46 /* OCMock.framework */,
-				11BA4B011C8912F20007EC46 /* OCMockTests.xctest */,
-				11BA4B031C8912F20007EC46 /* libOCMock.a */,
-				11BA4B051C8912F20007EC46 /* OCMockLibTests.xctest */,
-				11BA4B071C8912F20007EC46 /* OCMock.framework */,
-				11BA4B091C8912F20007EC46 /* OCMock.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		11BA4B0B1C8913330007EC46 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */,
-				11BA4AE61C8911A00007EC46 /* FLAnimatedImage.xcodeproj */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,45 +258,6 @@
 			productReference = 111084061C875B5000699670 /* NYTPhotoViewer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1110840F1C875B5000699670 /* NYTPhotoViewerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1110841D1C875B5000699670 /* Build configuration list for PBXNativeTarget "NYTPhotoViewerTests" */;
-			buildPhases = (
-				1110840C1C875B5000699670 /* Sources */,
-				1110840D1C875B5000699670 /* Frameworks */,
-				1110840E1C875B5000699670 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				111084131C875B5000699670 /* PBXTargetDependency */,
-			);
-			name = NYTPhotoViewerTests;
-			productName = NYTPhotoViewerTests;
-			productReference = 111084101C875B5000699670 /* NYTPhotoViewerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		111084691C876A2B00699670 /* Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1110847E1C876A2B00699670 /* Build configuration list for PBXNativeTarget "Example" */;
-			buildPhases = (
-				111084661C876A2B00699670 /* Sources */,
-				111084671C876A2B00699670 /* Frameworks */,
-				111084681C876A2B00699670 /* Resources */,
-				1110849C1C876DDE00699670 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				11BA4AEF1C8912600007EC46 /* PBXTargetDependency */,
-				1110849B1C876DDE00699670 /* PBXTargetDependency */,
-				11BA4AF41C8912980007EC46 /* PBXTargetDependency */,
-			);
-			name = Example;
-			productName = Example;
-			productReference = 1110846A1C876A2B00699670 /* Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 		11FBDA821C8774AC00018169 /* NYTPhotoViewerCore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11FBDA881C8774AD00018169 /* Build configuration list for PBXNativeTarget "NYTPhotoViewerCore" */;
@@ -512,26 +276,6 @@
 			productReference = 11FBDA831C8774AC00018169 /* NYTPhotoViewerCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		11FBDADB1C877BD600018169 /* Example-Swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 11FBDAED1C877BD600018169 /* Build configuration list for PBXNativeTarget "Example-Swift" */;
-			buildPhases = (
-				11FBDAD81C877BD600018169 /* Sources */,
-				11FBDAD91C877BD600018169 /* Frameworks */,
-				11FBDADA1C877BD600018169 /* Resources */,
-				11FBDAF51C877CCE00018169 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				11FBDAFA1C877CEF00018169 /* PBXTargetDependency */,
-				11BA4B0F1C8913590007EC46 /* PBXTargetDependency */,
-			);
-			name = "Example-Swift";
-			productName = "Example-Swift";
-			productReference = 11FBDADC1C877BD600018169 /* Example-Swift.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -545,18 +289,8 @@
 					111084051C875B5000699670 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					1110840F1C875B5000699670 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
-					111084691C876A2B00699670 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
 					11FBDA821C8774AC00018169 = {
 						CreatedOnToolsVersion = 7.2.1;
-					};
-					11FBDADB1C877BD600018169 = {
-						CreatedOnToolsVersion = 7.2.1;
-						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -572,78 +306,13 @@
 			mainGroup = 111083FC1C875B4F00699670;
 			productRefGroup = 111084071C875B5000699670 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 11BA4AE71C8911A00007EC46 /* Products */;
-					ProjectRef = 11BA4AE61C8911A00007EC46 /* FLAnimatedImage.xcodeproj */;
-				},
-				{
-					ProductGroup = 11BA4AF61C8912F20007EC46 /* Products */;
-					ProjectRef = 11BA4AF51C8912F20007EC46 /* OCMock.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				111084051C875B5000699670 /* NYTPhotoViewer */,
 				11FBDA821C8774AC00018169 /* NYTPhotoViewerCore */,
-				1110840F1C875B5000699670 /* NYTPhotoViewerTests */,
-				111084691C876A2B00699670 /* Example */,
-				11FBDADB1C877BD600018169 /* Example-Swift */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		11BA4AEB1C8911A00007EC46 /* FLAnimatedImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FLAnimatedImage.framework;
-			remoteRef = 11BA4AEA1C8911A00007EC46 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		11BA4AFF1C8912F20007EC46 /* OCMock.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OCMock.framework;
-			remoteRef = 11BA4AFE1C8912F20007EC46 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		11BA4B011C8912F20007EC46 /* OCMockTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = OCMockTests.xctest;
-			remoteRef = 11BA4B001C8912F20007EC46 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		11BA4B031C8912F20007EC46 /* libOCMock.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libOCMock.a;
-			remoteRef = 11BA4B021C8912F20007EC46 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		11BA4B051C8912F20007EC46 /* OCMockLibTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = OCMockLibTests.xctest;
-			remoteRef = 11BA4B041C8912F20007EC46 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		11BA4B071C8912F20007EC46 /* OCMock.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OCMock.framework;
-			remoteRef = 11BA4B061C8912F20007EC46 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		11BA4B091C8912F20007EC46 /* OCMock.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = OCMock.framework;
-			remoteRef = 11BA4B081C8912F20007EC46 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		111084041C875B5000699670 /* Resources */ = {
@@ -654,32 +323,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1110840E1C875B5000699670 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		111084681C876A2B00699670 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		11FBDA811C8774AC00018169 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				11FBDAA41C87754A00018169 /* NYTPhotoViewer.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		11FBDADA1C877BD600018169 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,20 +352,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1110840C1C875B5000699670 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		111084661C876A2B00699670 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		11FBDA7E1C8774AC00018169 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -736,47 +370,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11FBDAD81C877BD600018169 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		111084131C875B5000699670 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 111084051C875B5000699670 /* NYTPhotoViewer */;
-			targetProxy = 111084121C875B5000699670 /* PBXContainerItemProxy */;
-		};
-		1110849B1C876DDE00699670 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 111084051C875B5000699670 /* NYTPhotoViewer */;
-			targetProxy = 1110849A1C876DDE00699670 /* PBXContainerItemProxy */;
-		};
-		11BA4AEF1C8912600007EC46 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FLAnimatedImage;
-			targetProxy = 11BA4AEE1C8912600007EC46 /* PBXContainerItemProxy */;
-		};
-		11BA4AF41C8912980007EC46 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FLAnimatedImage;
-			targetProxy = 11BA4AF31C8912980007EC46 /* PBXContainerItemProxy */;
-		};
-		11BA4B0F1C8913590007EC46 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FLAnimatedImage;
-			targetProxy = 11BA4B0E1C8913590007EC46 /* PBXContainerItemProxy */;
-		};
-		11FBDAFA1C877CEF00018169 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 111084051C875B5000699670 /* NYTPhotoViewer */;
-			targetProxy = 11FBDAF91C877CEF00018169 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		111084181C875B5000699670 /* Debug */ = {
@@ -914,48 +508,6 @@
 			};
 			name = Release;
 		};
-		1110841E1C875B5000699670 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NYTPhotoViewerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.NYTPhotoViewerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		1110841F1C875B5000699670 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NYTPhotoViewerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.NYTPhotoViewerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		1110847F1C876A2B00699670 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Example/NYTPhotoViewer-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		111084801C876A2B00699670 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Example/NYTPhotoViewer-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NYTimes.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		11FBDA891C8774AD00018169 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -992,39 +544,6 @@
 			};
 			name = Release;
 		};
-		11FBDAEB1C877BD600018169 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/FLAnimatedImage/build/Debug-iphoneos",
-				);
-				INFOPLIST_FILE = "Example-Swift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.NYTimes.Example-Swift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		11FBDAEC1C877BD600018169 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/FLAnimatedImage/build/Debug-iphoneos",
-				);
-				INFOPLIST_FILE = "Example-Swift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.NYTimes.Example-Swift";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1046,38 +565,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1110841D1C875B5000699670 /* Build configuration list for PBXNativeTarget "NYTPhotoViewerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1110841E1C875B5000699670 /* Debug */,
-				1110841F1C875B5000699670 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1110847E1C876A2B00699670 /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1110847F1C876A2B00699670 /* Debug */,
-				111084801C876A2B00699670 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		11FBDA881C8774AD00018169 /* Build configuration list for PBXNativeTarget "NYTPhotoViewerCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11FBDA891C8774AD00018169 /* Debug */,
 				11FBDA8A1C8774AD00018169 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		11FBDAED1C877BD600018169 /* Build configuration list for PBXNativeTarget "Example-Swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				11FBDAEB1C877BD600018169 /* Debug */,
-				11FBDAEC1C877BD600018169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
